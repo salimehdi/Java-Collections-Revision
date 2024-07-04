@@ -1,5 +1,7 @@
 # Java-Collections-Revision
 
+`Dont forget to give a start 😆, keep studying !`
+
 ### HashMap
 A `HashMap` stores key-value pairs and uses hashing for efficient storage and retrieval.
 
