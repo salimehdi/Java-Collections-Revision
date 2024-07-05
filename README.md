@@ -370,4 +370,174 @@ public class DequeExample {
 }
 ```
 
-These examples demonstrate the usage of key methods for each type of collection in Java.
+## String
+A `String` in Java is an immutable sequence of characters. Once created, the contents of a `String` cannot be modified.
+
+Key Methods:
+- `length()`: Returns the length of the string.
+- `charAt(int index)`: Returns the character at the specified index.
+- `substring(int beginIndex, int endIndex)`: Returns a new string that is a substring of the original string.
+- `contains(CharSequence s)`: Returns true if the string contains the specified sequence of characters.
+- `indexOf(String str)`: Returns the index within the string of the first occurrence of the specified substring.
+- `lastIndexOf(String str)`: Returns the index within the string of the last occurrence of the specified substring.
+- `toLowerCase()`: Converts all characters in the string to lower case.
+- `toUpperCase()`: Converts all characters in the string to upper case.
+- `trim()`: Removes leading and trailing white spaces.
+- `replace(CharSequence target, CharSequence replacement)`: Replaces each occurrence of the target sequence with the replacement sequence.
+
+Example:
+```java
+public class StringExample {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        System.out.println("Length: " + str.length());
+        System.out.println("Character at index 1: " + str.charAt(1));
+        System.out.println("Substring from index 0 to 5: " + str.substring(0, 5));
+        System.out.println("Contains 'World': " + str.contains("World"));
+        System.out.println("Index of 'o': " + str.indexOf('o'));
+        System.out.println("Last index of 'o': " + str.lastIndexOf('o'));
+        System.out.println("To lower case: " + str.toLowerCase());
+        System.out.println("To upper case: " + str.toUpperCase());
+        System.out.println("Trimmed string: '" + str.trim() + "'");
+        System.out.println("Replaced 'World' with 'Java': " + str.replace("World", "Java"));
+    }
+}
+```
+
+## StringBuilder
+A `StringBuilder` is a mutable sequence of characters. It is used to create and manipulate strings in an efficient way.
+
+Key Methods:
+- `append(String str)`: Appends the specified string to the sequence.
+- `insert(int offset, String str)`: Inserts the specified string at the specified position.
+- `delete(int start, int end)`: Removes the characters in the specified range.
+- `reverse()`: Reverses the sequence.
+- `toString()`: Returns a string representing the data in the sequence.
+
+Example:
+```java
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hello");
+        sb.append(", ");
+        sb.append("World!");
+        System.out.println("StringBuilder content: " + sb.toString());
+
+        sb.insert(7, "Java ");
+        System.out.println("After insertion: " + sb.toString());
+
+        sb.delete(5, 7);
+        System.out.println("After deletion: " + sb.toString());
+
+        sb.reverse();
+        System.out.println("After reversing: " + sb.toString());
+    }
+}
+```
+
+## Parsing Strings to Basic Data Types
+
+### Parsing to int
+- `Integer.parseInt(String s)`: Parses the string argument as a signed decimal integer.
+
+Example:
+```java
+public class ParseIntExample {
+    public static void main(String[] args) {
+        String str = "123";
+        int num = Integer.parseInt(str);
+        System.out.println("Parsed integer: " + num);
+    }
+}
+```
+
+### Parsing to double
+- `Double.parseDouble(String s)`: Parses the string argument as a double.
+
+Example:
+```java
+public class ParseDoubleExample {
+    public static void main(String[] args) {
+        String str = "123.45";
+        double num = Double.parseDouble(str);
+        System.out.println("Parsed double: " + num);
+    }
+}
+```
+
+### Parsing to boolean
+- `Boolean.parseBoolean(String s)`: Parses the string argument as a boolean.
+
+Example:
+```java
+public class ParseBooleanExample {
+    public static void main(String[] args) {
+        String str = "true";
+        boolean bool = Boolean.parseBoolean(str);
+        System.out.println("Parsed boolean: " + bool);
+    }
+}
+```
+
+### Parsing to long
+- `Long.parseLong(String s)`: Parses the string argument as a long.
+
+Example:
+```java
+public class ParseLongExample {
+    public static void main(String[] args) {
+        String str = "123456789";
+        long num = Long.parseLong(str);
+        System.out.println("Parsed long: " + num);
+    }
+}
+```
+
+### Parsing to float
+- `Float.parseFloat(String s)`: Parses the string argument as a float.
+
+Example:
+```java
+public class ParseFloatExample {
+    public static void main(String[] args) {
+        String str = "123.45";
+        float num = Float.parseFloat(str);
+        System.out.println("Parsed float: " + num);
+    }
+}
+```
+
+### Converting Primitive Data Types to Strings
+- `String.valueOf(int i)`: Returns the string representation of the int argument.
+- `String.valueOf(double d)`: Returns the string representation of the double argument.
+- `String.valueOf(boolean b)`: Returns the string representation of the boolean argument.
+- `String.valueOf(long l)`: Returns the string representation of the long argument.
+- `String.valueOf(float f)`: Returns the string representation of the float argument.
+
+Example:
+```java
+public class ValueOfExample {
+    public static void main(String[] args) {
+        int i = 123;
+        double d = 123.45;
+        boolean b = true;
+        long l = 123456789L;
+        float f = 123.45f;
+
+        String intStr = String.valueOf(i);
+        String doubleStr = String.valueOf(d);
+        String booleanStr = String.valueOf(b);
+        String longStr = String.valueOf(l);
+        String floatStr = String.valueOf(f);
+
+        System.out.println("String representation of int: " + intStr);
+        System.out.println("String representation of double: " + doubleStr);
+        System.out.println("String representation of boolean: " + booleanStr);
+        System.out.println("String representation of long: " + longStr);
+        System.out.println("String representation of float: " + floatStr);
+    }
+}
+```
+
+Keep studying and happy coding! 🌟😆
