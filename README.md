@@ -541,3 +541,13 @@ public class ValueOfExample {
 ```
 
 Keep studying and happy coding! 🌟😆
+
+
+| **Data Structure Type** | **Implementations**                                                            |
+|-------------------------|-------------------------------------------------------------------------------|
+| **List**                | `ArrayList`, `LinkedList`, `Vector`, `Stack`                                  |
+| **Set**                 | `HashSet`, `LinkedHashSet`, `TreeSet`, `EnumSet`                              |
+| **Queue**               | `PriorityQueue`, `LinkedList`, `ArrayDeque`                                   |
+| **Deque**               | `ArrayDeque`, `LinkedList`                                                    |
+| **Map**                 | `HashMap`, `LinkedHashMap`, `TreeMap`, `Hashtable`, `WeakHashMap`, `IdentityHashMap`, `EnumMap` |
+
